@@ -1,0 +1,18 @@
+<div class="container m-5 text-center">
+  <h1>Flats in London</h1>
+  <div class='d-flex justify-content-around'>
+    <% @flats.each do |flat| %>
+      <div class='card m-3 p-2 rounded'>
+        <h3><%= flat.name %></h3>
+        <h2><%= flat.address %></h2>
+        <div class="d-flex align-items-end">
+          <i class="fas fa-user-friends p-1"></i>
+          <p class='px-2 m-0'><%= flat.number_of_guests %></p>
+          <i class="fas fa-euro-sign p-1"></i>
+          <p class='px-2 m-0'><%= flat.price_per_night %></p>
+        </div>
+      </li>
+  </div>
+
+  <% end %>
+</div>
